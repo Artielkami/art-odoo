@@ -1,6 +1,7 @@
 {
     'name': "Website Sale Video",
     'description': "Insert video in website editor and product video",
+    'author': "Artiel",
     'category': 'Website',
     'sequence': 300,
     'version': '1.0',
