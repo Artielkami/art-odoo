@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="product_image_inherit_website_video" model="ir.ui.view">
+        <field name="name">product.image.view.form.inherit</field>
+        <field name="model">product.image</field>
+        <field name="inherit_id" ref="website_sale.view_product_image_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='video_url']" position="after">
+                <group>
+                    <field name="use_system_video" />
+                    <field name="video_attachment_id" invisible="not use_system_video"/>
+                    <field name="video_show_controls" invisible="not use_system_video" />
+                    <field name="video_auto_play" invisible="not use_system_video" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
